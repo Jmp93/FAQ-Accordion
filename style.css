@@ -15,6 +15,64 @@
 
 body {
   font-family: 'Work Sans', sans-serif;
+  min-height: 100vh;
+  background: url('./assets/images/background-pattern-mobile.svg') no-repeat top
+      center,
+    var(--purple-100);
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 90%;
+  background: var(--white);
+  border-radius: 20px;
+  padding: 2rem;
+  max-width: 375px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 1.25rem;
+}
+
+.question:hover .subheading {
+  color: var(--purple-600);
+}
+
+.faq-list .box:not(:last-of-type) {
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--purple-600);
+}
+
+.plus-el {
+  cursor: pointer;
+}
+
+.answer {
+  padding-bottom: 1.25rem;
+  transition: all 0.3s ease;
+}
+
+.toggle {
+  display: none;
+}
+
+.subheading {
+  font-size: 1rem;
+  font-weight: 700;
 }
 
 /* Mobile: 375px;
